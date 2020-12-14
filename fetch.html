@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <body>
+    <article>
+    
+    
+    </article>
+    <input type="button" value="fetch" onclick="
+    fetch('HTML').
+    then(function(response){
+    if(response.status == '404'){
+      alert('404 Not Found')
+      }
+    else{
+    response.text().
+    then(function(text){
+    document.querySelector('article').innerHTML = text;
+    })
+    }
+  })
+  
+  ">
+  </body>
+</html>
